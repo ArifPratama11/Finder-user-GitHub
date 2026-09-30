@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GitHub User Finder</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>GitHub User Finder</h1>
+      <button id="theme-toggle" type="button">🌙</button>
+    </header>
+
+    <form id="search-form">
+      <input
+        id="username"
+        type="search"
+        placeholder="Masukkan username GitHub anda"
+        aria-label="Username GitHub"
+        required
+      >
+      <button id="search-button" type="submit">Cari</button>
+    </form>
+
+    <p id="message" role="status" aria-live="polite"></p>
+    <section id="profile" aria-label="Profil GitHub"></section>
+
+    <section class="saved-section">
+      <div class="section-heading">
+        <h2>Pencarian terakhir</h2>
+        <button id="clear-history" class="text-button" type="button">Hapus riwayat</button>
+      </div>
+      <div id="history" class="saved-list"></div>
+    </section>
+
+    <section class="saved-section">
+      <h2>Favorit</h2>
+      <div id="favorites" class="saved-list"></div>
+    </section>
+  </main>
+</body>
+</html>
